@@ -14,10 +14,10 @@ class studentdataapi(viewsets.ModelViewSet):
     queryset=studentdata.objects.all()
     serializer_class=studentdataserializer
 
-def displaydataa(request):
-    tabledata = requests.get('http://127.0.0.1:8000/studentdata/') 
-    jtable=tabledata.json()
-    return render(request , 'base.html' , {"joindata":jtable})
+#def displaydataa(request):
+    #tabledata = requests.get('http://127.0.0.1:8000/studentdata/') 
+    #jtable=tabledata.json()
+    #return render(request , 'base.html' , {"joindata":jtable})
 
 def displaydata(request):
     queryset = studentdata.objects.all()
