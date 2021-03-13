@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('' , include(router.urls)),
     #path('my' , views.displaydataa,name="my"),
+    ###############################################
     path('my' , views.displaydata,name="my"),
     path('edit/<int:pk>',views.studentupdate.as_view()),
     path('post',views.postapi,name="postapi"),
