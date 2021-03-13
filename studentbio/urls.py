@@ -26,7 +26,7 @@ router.register('studentdata', views.studentdataapi)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('' , include(router.urls)),
-    path('home' , views.displaydata),
+    path('main' , views.displaydata),
     path('edit/<int:pk>',views.studentupdate.as_view()),
     path('post',views.postapi,name="postapi"),
     path('upload/', include('restapp.urls')),
